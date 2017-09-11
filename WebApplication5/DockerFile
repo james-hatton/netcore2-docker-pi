@@ -1,0 +1,6 @@
+﻿FROM armhf/ubuntu
+
+WORKDIR /app
+EXPOSE 80
+COPY /docker .
+ENTRYPOINT ["dotnet", "WebApplication6.dll"]
