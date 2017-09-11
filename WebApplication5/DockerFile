@@ -2,5 +2,5 @@
 
 WORKDIR /app
 EXPOSE 80
-COPY /docker .
+COPY ${source:-obj/Docker/publish} .
 ENTRYPOINT ["dotnet", "WebApplication6.dll"]

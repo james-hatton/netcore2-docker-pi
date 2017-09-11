@@ -12538,15 +12538,12 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "c:\\users\\jameshatton\\Source\\Repos\\WebApplication5\\WebApplication5\\WebApplication5.csproj",
+      "projectUniqueName": "C:\\Users\\jameshatton\\Source\\Repos\\WebApplication5\\WebApplication5\\WebApplication5.csproj",
       "projectName": "WebApplication5",
-      "projectPath": "c:\\users\\jameshatton\\Source\\Repos\\WebApplication5\\WebApplication5\\WebApplication5.csproj",
+      "projectPath": "C:\\Users\\jameshatton\\Source\\Repos\\WebApplication5\\WebApplication5\\WebApplication5.csproj",
       "packagesPath": "C:\\Users\\jameshatton\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\jameshatton\\Source\\Repos\\WebApplication5\\WebApplication5\\obj\\",
+      "outputPath": "C:\\Users\\jameshatton\\Source\\Repos\\WebApplication5\\WebApplication5\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12559,7 +12556,11 @@
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\fakenuget": {},
+        "http://webdev08/nuget/": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://halsbury.pkgs.visualstudio.com/_packaging/Halsbury/nuget/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
