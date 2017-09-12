@@ -1,4 +1,4 @@
-﻿FROM armhf/ubuntu
+﻿FROM jameshatton/ubuntunetcore2
  
 WORKDIR /myapp
 
