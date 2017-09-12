@@ -12538,6 +12538,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "C:\\Users\\jameshatton\\Source\\Repos\\WebApplication5\\WebApplication5\\WebApplication5.csproj",
       "projectName": "WebApplication5",
@@ -12557,10 +12560,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\fakenuget": {},
-        "http://webdev08/nuget/": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://halsbury.pkgs.visualstudio.com/_packaging/Halsbury/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
