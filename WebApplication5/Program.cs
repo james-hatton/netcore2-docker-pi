@@ -18,8 +18,9 @@ namespace WebApplication5
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>().UseUrls("http://127.0.0.1:5000")
+            WebHost.CreateDefaultBuilder(args).UseKestrel()
+            .UseUrls("http://*:5000")
+                .UseStartup<Startup>().UseUrls()
                 .Build();
     }
 }
