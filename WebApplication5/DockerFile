@@ -1,4 +1,4 @@
-﻿FROM jameshatton/ubuntunetcore2
+﻿FROM jameshatton/ubuntunetcore2:1
  
 WORKDIR /myapp
 
