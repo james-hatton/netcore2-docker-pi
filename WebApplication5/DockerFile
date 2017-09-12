@@ -5,4 +5,4 @@ WORKDIR /myapp
 EXPOSE 80
 COPY /myapp /myapp 
 
-RUN ./WebApplication5
+CMD ./WebApplication5
