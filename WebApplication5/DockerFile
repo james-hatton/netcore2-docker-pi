@@ -1,6 +1,8 @@
-﻿FROM armhf/ubuntu
+﻿FROM jameshatton/ubuntunetcore2:1
+ 
+WORKDIR /myapp
 
-WORKDIR /app
 EXPOSE 80
-COPY ${source:-obj/Docker/publish} .
-ENTRYPOINT ["dotnet", "WebApplication6.dll"]
+COPY /myapp /myapp 
+
+CMD ./WebApplication5
