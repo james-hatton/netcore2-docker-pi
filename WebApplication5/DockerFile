@@ -1,4 +1,6 @@
 ﻿FROM armhf/ubuntu
+ 
+WORKDIR /myapp
 
 EXPOSE 80
 COPY . /myapp 
