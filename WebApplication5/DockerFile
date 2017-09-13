@@ -9,3 +9,4 @@ EXPOSE 5000
 COPY /myapp /myapp 
 
 CMD ./WebApplication5
+ 
