@@ -12,7 +12,7 @@ namespace WebApplication5.Pages
 
         public void OnGet()
         {
-            bool stop = true;
+            bool stop = true;  
             Message = "Your application description page.";
         }
     }
