@@ -12542,11 +12542,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\jameshatton\\Source\\Repos\\WebApplication5\\WebApplication5\\WebApplication5.csproj",
+      "projectUniqueName": "C:\\Users\\jameshatton\\Source\\Repos\\WebApplication5\\netcore2-docker-pi\\WebApplication5\\WebApplication5.csproj",
       "projectName": "WebApplication5",
-      "projectPath": "C:\\Users\\jameshatton\\Source\\Repos\\WebApplication5\\WebApplication5\\WebApplication5.csproj",
+      "projectPath": "C:\\Users\\jameshatton\\Source\\Repos\\WebApplication5\\netcore2-docker-pi\\WebApplication5\\WebApplication5.csproj",
       "packagesPath": "C:\\Users\\jameshatton\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jameshatton\\Source\\Repos\\WebApplication5\\WebApplication5\\obj\\",
+      "outputPath": "C:\\Users\\jameshatton\\Source\\Repos\\WebApplication5\\netcore2-docker-pi\\WebApplication5\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
