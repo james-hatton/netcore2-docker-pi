@@ -21,7 +21,7 @@ namespace WebApplication5.Pages
 
 
             ConnectionFactory conn = new ConnectionFactory();
-            conn.HostName = "rabbitmq";
+            conn.HostName = "rab";
             conn.UserName = "guest";
             conn.Password = "guest";
 
