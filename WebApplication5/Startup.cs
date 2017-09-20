@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using WebApplication5.Hubs;
+using Microsoft.AspNetCore.Routing;
 
 namespace WebApplication5
 {
@@ -18,10 +20,13 @@ namespace WebApplication5
 
         public IConfiguration Configuration { get; }
 
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,6 +49,12 @@ namespace WebApplication5
                 routes.MapRoute(
                     name: "default",
                     template: "{controller}/{action=Index}/{id?}");
+            });
+
+
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<MessageHub>("message");
             });
         }
     }
