@@ -17,10 +17,10 @@ namespace WebApplication5.Pages
         {
             this.hubContext = hubContext;
         }
-        public void OnGet()
+        public async void OnGet()
         {
-
+            await hubContext.Clients.All.InvokeAsync("send", HttpContext.Connection.RemoteIpAddress.ToString());
         }
-        
+
     }
 }

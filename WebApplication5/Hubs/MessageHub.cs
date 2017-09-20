@@ -1,7 +1,4 @@
 ﻿using Microsoft.AspNetCore.SignalR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace WebApplication5.Hubs
@@ -11,9 +8,10 @@ namespace WebApplication5.Hubs
         public MessageHub()
         {
         }
-        public Task Send(string message)
+        public override Task OnConnectedAsync()
         {
-            return Clients.All.InvokeAsync("Send", message);
+
+            return base.OnConnectedAsync();
         }
     }
 }

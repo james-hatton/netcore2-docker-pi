@@ -109,6 +109,9 @@
 	</div>
 </div>
 
+<div id="connected-clients">
+
+</div>
 
 <script type="text/javascript" src="~/js/signalr-client-1.0.0-alpha1-final.min.js"></script>
 
@@ -116,17 +119,13 @@
 <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
 <script type="text/javascript">
-
 	$(document).ready(function () {
 		let connection = new signalR.HubConnection('/message');
 
 		connection.on('send', data => {
-			console.log(data);
+			$("#connected-clients").append("<div>Client connected: " + data + "</div>");
 		});
 
-		connection.start()
-			.then(() => connection.invoke('send', 'Hello'));
-
-
+		connection.start();
 	});
 </script>
