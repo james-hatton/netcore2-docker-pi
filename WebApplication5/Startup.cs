@@ -25,7 +25,7 @@ namespace WebApplication5
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            
+
             services.AddSignalR();
         }
 
@@ -56,6 +56,7 @@ namespace WebApplication5
             {
                 routes.MapHub<MessageHub>("message");
             });
+
         }
     }
 }
