@@ -19,7 +19,7 @@ namespace WebApplication5.Pages
         }
         public async void OnGet()
         {
-            await hubContext.Clients.All.InvokeAsync("send", HttpContext.Connection.RemoteIpAddress.ToString());
+            await hubContext.Clients.All.InvokeAsync("send", HttpContext.Request.Headers["X-Forwarded-For"].FirstOrDefault().ToString());
         }
 
     }
