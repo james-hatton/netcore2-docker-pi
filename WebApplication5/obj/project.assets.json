@@ -2889,31 +2889,6 @@
           "lib/netstandard1.5/RabbitMQ.Client.dll": {}
         }
       },
-      "Raspberry.IO.GeneralPurpose/2.4.0": {
-        "type": "package",
-        "dependencies": {
-          "Raspberry.System": "2.0.0"
-        },
-        "compile": {
-          "lib/net40/Raspberry.IO.GeneralPurpose.dll": {},
-          "lib/net40/Raspberry.IO.Interop.dll": {},
-          "lib/net40/Raspberry.IO.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Raspberry.IO.GeneralPurpose.dll": {},
-          "lib/net40/Raspberry.IO.Interop.dll": {},
-          "lib/net40/Raspberry.IO.dll": {}
-        }
-      },
-      "Raspberry.System/2.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Raspberry.System.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Raspberry.System.dll": {}
-        }
-      },
       "Remotion.Linq/2.1.1": {
         "type": "package",
         "dependencies": {
@@ -7941,31 +7916,6 @@
         "lib/netstandard1.5/RabbitMQ.Client.xml",
         "rabbitmq.client.5.0.1.nupkg.sha512",
         "rabbitmq.client.nuspec"
-      ]
-    },
-    "Raspberry.IO.GeneralPurpose/2.4.0": {
-      "sha512": "CToCC6KpnqcEfZ6q7b58DQWN5EfexqV+FQt97cAX956FO51z6zCAJ0STEY69rsOKRMEM0TWNqhMyuHkXqCjfZg==",
-      "type": "package",
-      "path": "raspberry.io.generalpurpose/2.4.0",
-      "files": [
-        "lib/net40/Raspberry.IO.GeneralPurpose.XML",
-        "lib/net40/Raspberry.IO.GeneralPurpose.dll",
-        "lib/net40/Raspberry.IO.Interop.dll",
-        "lib/net40/Raspberry.IO.dll",
-        "lib/net40/Raspberry.IO.xml",
-        "raspberry.io.generalpurpose.2.4.0.nupkg.sha512",
-        "raspberry.io.generalpurpose.nuspec"
-      ]
-    },
-    "Raspberry.System/2.0.0": {
-      "sha512": "EDmdzYKvjbzq2AVKYm5SHMgEKmtJXMa0G3UEXFrNnxqfGZuNkbOAVN1pZOkqx2TlHiTXHb0fQtxKgXF8wXdWRw==",
-      "type": "package",
-      "path": "raspberry.system/2.0.0",
-      "files": [
-        "lib/net40/Raspberry.System.dll",
-        "lib/net40/Raspberry.System.xml",
-        "raspberry.system.2.0.0.nupkg.sha512",
-        "raspberry.system.nuspec"
       ]
     },
     "Remotion.Linq/2.1.1": {
@@ -13045,8 +12995,7 @@
       "Microsoft.AspNetCore.SignalR >= 1.0.0-alpha1-final",
       "Microsoft.NETCore.App >= 2.0.0",
       "Newtonsoft.Json >= 10.0.3",
-      "RabbitMQ.Client >= 5.0.1",
-      "Raspberry.IO.GeneralPurpose >= 2.4.0"
+      "RabbitMQ.Client >= 5.0.1"
     ]
   },
   "packageFolders": {
@@ -13093,10 +13042,6 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Raspberry.IO.GeneralPurpose": {
-            "target": "Package",
-            "version": "2.4.0"
-          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "2.0.0",
@@ -13126,27 +13071,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Raspberry.IO.GeneralPurpose 2.4.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Raspberry.IO.GeneralPurpose",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Raspberry.System 2.0.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Raspberry.System",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.0"
-      ]
-    }
-  ]
+  }
 }
